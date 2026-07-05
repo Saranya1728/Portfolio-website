@@ -63,7 +63,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
       <div className="text-center">
         <div ref={logoRef} className="mb-8">
           <h1 className="text-2xl md:text-3xl font-light text-foreground text-glow mb-4">
-             CodeZenith
+            SARANYA R
           </h1>
           <p className="text-xl text-muted-foreground">Loading Portfolio...</p>
         </div>
