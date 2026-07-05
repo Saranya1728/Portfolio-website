@@ -59,24 +59,37 @@ const Contact = () => {
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    const button = e.currentTarget.querySelector('button[type="submit"]');
-    if (button) {
-      gsap.to(button, {
-        scale: 0.95,
-        duration: 0.1,
-        yoyo: true,
-        repeat: 1,
-        ease: "power2.out"
-      });
+  const button = e.currentTarget.querySelector('button[type="submit"]');
+  if (button) {
+    gsap.to(button, {
+      scale: 0.95,
+      duration: 0.1,
+      yoyo: true,
+      repeat: 1,
+      ease: "power2.out"
+    });
+  }
+
+  try {
+    const response = await fetch('https://formspree.io/f/xojorlbr', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      alert("Thanks! Your message has been sent.");
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      alert("Something went wrong. Please try again or email me directly.");
     }
-
-    console.log('Form submitted:', formData);
-
-    setFormData({ name: '', email: '', message: '' });
-  };
+  } catch (error) {
+    alert("Something went wrong. Please try again or email me directly.");
+  }
+};
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
