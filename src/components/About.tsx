@@ -14,14 +14,10 @@ const About = () => {
   const skills = [
     { icon: Globe, name: 'HTML5/CSS3', level: 95 },
     { icon: Code, name: 'JavaScript', level: 90 },
-    { icon: Code, name: 'React/Redux', level: 95 },
-    { icon: Lightning, name: 'Tailwind CSS', level: 91 },
-    { icon: Cube, name: 'Bootstrap', level: 91 },
-    { icon: Rocket, name: 'Next.js', level: 85 },
+    { icon: Code, name: 'React', level: 45 },
+    { icon: Cube, name: 'JAVA Programming', level: 91 },
+    { icon: Rocket, name: 'MYSQL', level: 85 },
     { icon: Heart, name: 'UI/UX Design', level: 87 },
-    { icon: Terminal, name: 'Node.js/Express.js', level: 87 },
-    { icon: Database, name: 'MongoDB', level: 87 },
-    { icon: Database, name: 'PostgreSQL', level: 87 },
     { icon: GitBranch, name: 'Git', level: 89 },
     { icon: Cube, name: 'GitHub', level: 83 },
   ];
@@ -101,16 +97,16 @@ const About = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I’m a Full-Stack Developer with 1 year of hands-on experience building fast, scalable, and responsive web applications using React.js, Node.js, Express, MongoDB, and PostgreSQL/MySQL. I specialize in creating secure RESTful APIs, implementing modern frontend interfaces, and managing full deployment pipelines using tools like Docker and Git.
+              I'm an aspiring Web Developer with a solid foundation in HTML, CSS, and JavaScript, currently expanding into React to build more dynamic, component-based applications. I enjoy the process of turning an idea into a working, responsive website from scratch.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My skill set spans both frontend and backend development, with a strong focus on clean code, smooth user experiences, and animation-driven UI using libraries like Framer Motion. I'm passionate about solving real-world problems with practical, efficient, and user-centered solutions.
+              I've built several personal projects that helped me practice real-world skills — from layout and responsiveness to version control with Git and GitHub. I'm actively learning and looking for an opportunity to grow as a developer within a team.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <div className="glass px-4 py-2 rounded-lg">
-                <span className="text-primary-glow font-medium">1</span>
+                <span className="text-primary-glow font-medium">0</span>
                 <span className="text-muted-foreground ml-1">Years Experience</span>
               </div>
               <div className="glass px-4 py-2 rounded-lg">
@@ -119,7 +115,7 @@ const About = () => {
               </div>
               <div className="glass px-4 py-2 rounded-lg">
                 <span className="text-accent-glow font-medium">100%</span>
-                <span className="text-muted-foreground ml-1">Client Satisfaction</span>
+                <span className="text-muted-foreground ml-1">Work Satisfaction</span>
               </div>
             </div>
           </div>

@@ -10,37 +10,28 @@ const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
 
-  const projects = [
-    {
-      id: 1,
-      title: "Bike-time – Immersive Experience",
-      description: "Developed an interactive biking experience website featuring dynamic animations, route exploration, performance stats, and a sleek responsive interface for riders and enthusiasts.",
-      image: "/Images/project-1.jpg",
-      tech: ["React", "Node.js", "Framer Motion", "Express.js", "PostgreSQL", "Tailwind CSS", "Docker"],
-      liveUrl: "",
-      githubUrl: ""
-    },
+const projects = [
+  {
+    id: 1,
+    title: "AI Neural Assist",
+    description: "An AI-based assistant built using Python and machine learning libraries, designed to process input and generate  dynamic intelligent responses using neural network concepts.",
+    image: "/Images/project-1.jpg",
+    tech: ["Python", "Machine Learning", "Neural Networks"],
+    liveUrl: "",
+    githubUrl: "https://github.com/Saranya1728/NeuroAssist-AI"
+  },
+  {
+    id: 2,
+    title: "Exam Registration Portal",
+    description: "A web-based portal that allows students to register for exams online, built with a focus on clean UI and smooth form handling using core web technologies.",
+    image: "/Images/project-2.png",
+    tech: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "",
+    githubUrl: "https://github.com/Saranya1728/Exam-Registration"
+  }
+];
 
-    {
-      id: 2,
-      title: "3D Portfolio Website – Interactive & Animated",
-      description: "A visually engaging portfolio website featuring real-time 3D elements with Spline, fluid animations using GSAP, and a responsive UI built with React and Tailwind CSS.",
-      image: "/Images/project-2.jpg",
-      tech: ["React", "Spline", "GSAP", "Tailwind CSS", "Vercel"],
-      liveUrl: "",
-      githubUrl: ""
-    },
-    {
-      id: 3,
-      title: "3D Website Landing Page",
-      description: "A modern 3D landing page built with Spline, HTML, and CSS, featuring smooth animations, interactive visuals, and a responsive, elegant layout for an engaging and immersive user experience across all devices.",
-      image: "/Images/project-3.jpg",
-      tech: ["HTML", "CSS", "Spline"],
-      liveUrl: "",
-      githubUrl: ""
-    }
 
-  ];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -107,7 +98,7 @@ const Projects = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-primary rounded-full mx-auto mb-6" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A curated collection of full stack projects demonstrating my expertise in building modern, scalable web applications — from intuitive frontends to robust backend systems.          </p>
+              A collection of projects I've built while learning and practicing web development and AI fundamentals.    </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

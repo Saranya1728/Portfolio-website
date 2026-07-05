@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { PaperPlaneTilt, GithubLogo, LinkedinLogo, Envelope, Phone, MapPin } from 'phosphor-react';
+import { PaperPlaneTilt, GithubLogo, LinkedinLogo, Envelope, MapPin } from 'phosphor-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -148,27 +148,16 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-foreground font-medium">Email</p>
-                  <p className="text-muted-foreground">codezenithhq@gmail.com</p>
+                  <p className="text-muted-foreground">rajasaranya404@gmail.com</p>
                 </div>
               </div>
-
-              <div className="flex items-center gap-4 p-4 glass rounded-lg hover:shadow-glow-secondary transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-secondary rounded-lg flex items-center justify-center">
-                  <Phone size={20} className="text-secondary-foreground" />
-                </div>
-                <div>
-                  <p className="text-foreground font-medium">Phone</p>
-                  <p className="text-muted-foreground">+91 9999999999</p>
-                </div>
-              </div>
-
               <div className="flex items-center gap-4 p-4 glass rounded-lg hover:shadow-glow-primary transition-all duration-300">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
                   <MapPin size={20} className="text-primary-foreground" />
                 </div>
                 <div>
                   <p className="text-foreground font-medium">Location</p>
-                  <p className="text-muted-foreground">New York City, New York</p>
+                  <p className="text-muted-foreground">Salem, Tamil Nadu</p>
                 </div>
               </div>
             </div>
@@ -176,12 +165,12 @@ const Contact = () => {
             <div>
               <h4 className="text-lg font-medium text-foreground mb-4">Follow Me</h4>
               <div className="flex gap-4">
-                <a href="#" className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center hover:shadow-glow-primary transition-all duration-300 hover:scale-110">
-                  <GithubLogo size={20} className="text-primary-foreground" />
-                </a>
-                <a href="#" className="w-12 h-12 bg-gradient-secondary rounded-lg flex items-center justify-center hover:shadow-glow-secondary transition-all duration-300 hover:scale-110">
-                  <LinkedinLogo size={20} className="text-secondary-foreground" />
-                </a>
+                <a href="https://github.com/Saranya1728" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center hover:shadow-glow-primary transition-all duration-300 hover:scale-110">
+                <GithubLogo size={20} className="text-primary-foreground" />
+              </a>
+                <a href="https://linkedin.com/in/saranya-r-5b588428b" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gradient-secondary rounded-lg flex items-center justify-center hover:shadow-glow-secondary transition-all duration-300 hover:scale-110">
+                <LinkedinLogo size={20} className="text-secondary-foreground" />
+              </a>
               </div>
             </div>
           </div>
