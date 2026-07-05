@@ -71,15 +71,15 @@ const Footer = () => {
           <div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Building modern, high-performance web experiences through elegant design, clean code, and the latest technologies.
+            Building clean, responsive web experiences while continuously learning and growing as a developer.
             </p>
             <div className="flex gap-4">
-              <a href="" className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center hover:shadow-glow-primary transition-all duration-300 hover:scale-110">
-                <GithubLogo size={18} className="text-primary-foreground" />
-              </a>
-              <a href="" className="w-10 h-10 bg-gradient-secondary rounded-lg flex items-center justify-center hover:shadow-glow-secondary transition-all duration-300 hover:scale-110">
-                <LinkedinLogo size={18} className="text-secondary-foreground" />
-              </a>
+              <a href="https://github.com/Saranya1728" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center hover:shadow-glow-primary transition-all duration-300 hover:scale-110">
+              <GithubLogo size={18} className="text-primary-foreground" />
+            </a>
+              <a href="https://linkedin.com/in/saranya-r-5b588428b" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-secondary rounded-lg flex items-center justify-center hover:shadow-glow-secondary transition-all duration-300 hover:scale-110">
+              <LinkedinLogo size={18} className="text-secondary-foreground" />
+            </a>
             </div>
           </div>
 
@@ -105,21 +105,21 @@ const Footer = () => {
             <h4 className="text-lg font-medium text-foreground mb-4">Get In Touch</h4>
             <div className="space-y-3">
               <p className="text-muted-foreground">
-                <span className="text-primary-glow">Email:</span><br />
-                codezenithhq@gmail.com
-              </p>
+              <span className="text-primary-glow">Email:</span><br />
+                rajasaranya404@gmail.com
+            </p>
               <p className="text-muted-foreground">
-                <span className="text-primary-glow">Location:</span><br />
-                New York City, New York
-              </p>
+              <span className="text-primary-glow">Location:</span><br />
+                Salem, Tamil Nadu.
+            </p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-border/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-center md:text-left">
-            © 2025 CodeZenith. All rights reserved.
-          </p>
+            © 2026 Saranya. All rights reserved.
+        </p>
 
           {/* <div className="flex items-center gap-2 text-muted-foreground">
             Made with
