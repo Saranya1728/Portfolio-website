@@ -93,7 +93,7 @@ const Hero = () => {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Image/Saranya-resume.pdf';
+    link.href = `${import.meta.env.BASE_URL}Images/Saranya-Resume.pdf`;
     link.download = 'Saranya.R-Resume.pdf';
     document.body.appendChild(link);
     link.click();

@@ -15,7 +15,7 @@ const projects = [
     id: 1,
     title: "AI Neural Assist",
     description: "An AI-based assistant built using Python and machine learning libraries, designed to process input and generate  dynamic intelligent responses using neural network concepts.",
-    image: "public/Images/project-1.jpeg",
+    image: `${import.meta.env.BASE_URL}Images/project-1.jpeg`,
     tech: ["Python", "Machine Learning", "Neural Networks"],
     liveUrl: "",
     githubUrl: "https://github.com/Saranya1728/NeuroAssist-AI"
@@ -24,7 +24,7 @@ const projects = [
     id: 2,
     title: "Exam Registration Portal",
     description: "A web-based portal that allows students to register for exams online, built with a focus on clean UI and smooth form handling using core web technologies.",
-    image: "public/Images/project-2.jpeg",
+    image: `${import.meta.env.BASE_URL}Images/project-2.jpeg`,
     tech: ["HTML", "CSS", "JavaScript"],
     liveUrl: "",
     githubUrl: "https://github.com/Saranya1728/Exam-Registration"
