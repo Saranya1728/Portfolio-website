@@ -15,7 +15,7 @@ const projects = [
     id: 1,
     title: "AI Neural Assist",
     description: "An AI-based assistant built using Python and machine learning libraries, designed to process input and generate  dynamic intelligent responses using neural network concepts.",
-    image: `${import.meta.env.BASE_URL}Images/project-1.jpeg`,
+    image: `${import.meta.env.BASE_URL}Images/Project-1.jpeg`,
     tech: ["Python", "Machine Learning", "Neural Networks"],
     liveUrl: "",
     githubUrl: "https://github.com/Saranya1728/NeuroAssist-AI"
