@@ -66,13 +66,13 @@ const Chatbot: React.FC = () => {
       let reply = "Sorry, I didn't understand that. Can you rephrase it?";
 
       if (userInput.includes("services")) {
-        reply = "CodeZenith offers services in frontend, backend development, animations, and AI integration. Would you like a portfolio link?";
+      reply = "Saranya works on frontend web development using HTML, CSS, JavaScript, and React, along with Python for AI/ML projects. Would you like to see the portfolio projects above?";
       } else if (userInput.includes("contact")) {
-        reply = "You can contact CodeZenith via the contact form above or email him directly at codezenithhq@gmail.com";
-      } else if (userInput.includes("react") || userInput.includes("gsap")) {
-        reply = "Yes! CodeZenith uses React, GSAP, and even WebGL to build stunning UIs.";
+      reply = "You can contact Saranya via the contact form above or email directly at rajasaranya404@gmail.com";
+      } else if (userInput.includes("react") || userInput.includes("javascript")) {
+      reply = "Yes! Saranya is skilled in JavaScript and is currently learning React to build modern web interfaces.";
       } else if (userInput.includes("project")) {
-        reply = "Tell me more about your project! CodeZenith can help with frontend, backend, UI/UX design, and building full-stack web applications.";
+      reply = "Saranya has built projects like an AI Neural Assist tool and an Exam Registration Portal. Check out the Projects section above for details!";
       }
 
       const botResponse = {
