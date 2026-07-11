@@ -83,7 +83,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             <div ref={logoRef}>
               <h2 className="text-2xl font-bold text-primary-glow cursor-pointer">
-                Portfolio
+                Front-End Developer & Designer
               </h2>
             </div>
 
@@ -108,7 +108,7 @@ const Navigation = () => {
 
       <div ref={mobileMenuRef}className="fixed top-0 right-0 w-full h-full bg-background/95 backdrop-blur-lg z-50 transform translate-x-full md:hidden">
         <div className="flex items-center justify-between p-6 border-b border-white/10">
-          <h2 className="text-2xl font-light text-primary-glow">Portfolio</h2>
+          <h2 className="text-2xl font-light text-primary-glow">Front-End Developer & Designer</h2>
           <button onClick={() => setIsOpen(false)} className="text-foreground p-2">
             <X size={24} />
           </button>
