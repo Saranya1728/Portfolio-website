@@ -40,11 +40,12 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
 
   return (
     <div ref={preloaderRef} className="fixed inset-0 z-50 flex items-center justify-center bg-background">
-      <div className="text-center">
+      <div className="text-center px-6">
         <div ref={logoRef}>
-          <h1 className="text-3xl md:text-4xl font-light text-foreground text-glow">
-            Saranya
+          <h1 className="text-2xl md:text-3xl font-light text-foreground text-glow mb-3">
+            Welcome to Saranya's Portfolio
           </h1>
+          <p className="text-lg text-muted-foreground">Turning ideas into real interfaces</p>
         </div>
       </div>
 

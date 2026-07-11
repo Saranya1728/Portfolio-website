@@ -79,7 +79,7 @@ const About = () => {
 
               <div className="relative w-full h-full glass rounded-full p-2 hover:shadow-glow-primary transition-all duration-500 group">
                 <div className="w-full h-full cursor-pointer rounded-full overflow-hidden bg-gradient-secondary">
-                  <img src={`${import.meta.env.BASE_URL}Images/Saran-image.jpeg`} alt="Saranya - Web Developer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}Images/Saran-image.jpeg`} alt="Saranya - Front-End Developer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
 
@@ -97,7 +97,7 @@ const About = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm an aspiring Web Developer with a solid foundation in HTML, CSS, and JavaScript, currently expanding into React to build more dynamic, component-based applications. I enjoy the process of turning an idea into a working, responsive website from scratch.
+              I'm an aspiring Front-End Developer with a solid foundation in HTML, CSS, and JavaScript, currently expanding into React to build more dynamic, component-based applications. I enjoy the process of turning an idea into a working, responsive website from scratch.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -106,9 +106,9 @@ const About = () => {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <div className="glass px-4 py-2 rounded-lg">
-                <span className="text-primary-glow font-medium">0</span>
-                <span className="text-muted-foreground ml-1">Years Experience</span>
-              </div>
+              <span className="text-primary-glow font-medium">6+</span>
+              <span className="text-muted-foreground ml-1">Skills Learned</span>
+            </div>
               <div className="glass px-4 py-2 rounded-lg">
                 <span className="text-secondary-glow font-medium">3+</span>
                 <span className="text-muted-foreground ml-1">Projects Completed</span>

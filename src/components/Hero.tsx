@@ -118,11 +118,11 @@ const Hero = () => {
           </span>
           {' '}–{' '}
           <br className="hidden md:block" />
-          <span className="text-primary-glow">Web Developer</span>
+          <span className="text-primary-glow">Front-End Developer</span>
         </h1>
 
         <p ref={subtitleRef} className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Web Developer building clean, responsive websites with HTML, CSS, and JavaScript.
+          Front-End Developer building clean, responsive websites with HTML, CSS, and JavaScript.
         </p>
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-4">
