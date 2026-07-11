@@ -7,9 +7,7 @@ interface PreloaderProps {
 
 const Preloader = ({ onComplete }: PreloaderProps) => {
   const preloaderRef = useRef<HTMLDivElement>(null);
-  const progressBarRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
-  const percentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -20,33 +18,15 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
       duration: 0.8,
       ease: "power3.out"
     })
-
-      .to(progressBarRef.current, {
-        width: "100%",
-        duration: 2.5,
-        ease: "power2.out"
-      }, "-=0.3")
-
-      .to({ value: 0 }, {
-        value: 100,
-        duration: 2.5,
-        ease: "power2.out",
-        onUpdate: function () {
-          if (percentRef.current) {
-            percentRef.current.textContent = Math.round(this.targets()[0].value) + '%';
-          }
-        }
-      }, "-=2.5")
-
       .to(logoRef.current, {
         scale: 1.1,
         duration: 0.3,
         ease: "power2.out"
-      })
+      }, "+=0.6")
       .to(preloaderRef.current, {
         opacity: 0,
         scale: 0.9,
-        duration: 1,
+        duration: 0.8,
         ease: "power3.inOut",
         onComplete: () => {
           onComplete();
@@ -61,21 +41,10 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
   return (
     <div ref={preloaderRef} className="fixed inset-0 z-50 flex items-center justify-center bg-background">
       <div className="text-center">
-        <div ref={logoRef} className="mb-8">
-          <h1 className="text-2xl md:text-3xl font-light text-foreground text-glow mb-4">
-            SARANYA R
+        <div ref={logoRef}>
+          <h1 className="text-3xl md:text-4xl font-light text-foreground text-glow">
+            Saranya
           </h1>
-          <p className="text-xl text-muted-foreground">Loading Portfolio...</p>
-        </div>
-
-        <div className="w-80 max-w-md mx-auto">
-          <div className="h-1 bg-muted rounded-full overflow-hidden mb-4">
-            <div ref={progressBarRef} className="h-full bg-gradient-primary w-0 rounded-full shadow-glow-primary" />
-          </div>
-
-          <div ref={percentRef} className="text-lg font-medium text-primary-glow">
-            0%
-          </div>
         </div>
       </div>
 
