@@ -13,9 +13,10 @@ const About = () => {
 
   const skills = [
     { icon: Globe, name: 'HTML5/CSS3', level: 95 },
-    { icon: Code, name: 'JavaScript', level: 90 },
+    { icon: Code, name: 'JavaScript', level: 80 },
     { icon: Code, name: 'React', level: 45 },
     { icon: Cube, name: 'JAVA Programming', level: 91 },
+    { icon: Cube, name: 'Python Programming', level: 85 },
     { icon: Rocket, name: 'MYSQL', level: 85 },
     { icon: Heart, name: 'UI/UX Design', level: 87 },
     { icon: GitBranch, name: 'Git', level: 89 },

@@ -114,7 +114,7 @@ const Hero = () => {
         <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-light text-foreground mb-6 leading-tight">
           Hi, I'm{' '}
           <span className="text-glow bg-gradient-primary bg-clip-text text-transparent">
-            Saranya.R
+            SARANYA.R
           </span>
           {' '}–{' '}
           <br className="hidden md:block" />
